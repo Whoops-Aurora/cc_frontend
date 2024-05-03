@@ -69,6 +69,12 @@ function App() {
       document.getElementById("signInDiv"),
       { theme: "outline", size: "large"}
     );
+
+    // Fetch random image and set as background
+    fetch('https://picsum.photos/1920/1080/?random')
+      .then(response => {
+        document.body.style.backgroundImage = `url(${response.url})`;
+      });
  }, []);
 
  useEffect(() => {

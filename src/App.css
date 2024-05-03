@@ -1,9 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .App-logo {
@@ -16,6 +31,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .user-info {
   display: flex;
   flex-direction: column;
@@ -46,26 +62,34 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f8f9fa;
-  color: #212529;
+  background: #4d94e08a;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
   text-align: center;
-  padding: 10px 0;
 }
+
 .signout-button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
-  color: #fff;
-  background-color: #dc3545;
-  border: none;
-  border-radius: 5px;
+  color: #ffffff;
+  background: rgb(200, 13, 13);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .signout-button:hover {
-  background-color: #c82333;
+  background-color: #34ec06;
 }
+
 .header {
   background-color: #343a40;
   color: #fff;
@@ -82,30 +106,33 @@
   margin: 0;
   font-size: 24px;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 30px;
-}
 
 .todo {
-  background-color: #fff;
-  margin-bottom: 10px;
-  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+  padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.todo:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .todo h3 {
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
 }
 
 .todo p {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  color: #666;
 }
 
 input[type="text"] {
@@ -113,6 +140,8 @@ input[type="text"] {
   border: 1px solid #ddd;
   border-radius: 5px;
   width: 100%;
+  max-width: 500px; /* Limit the maximum width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
   margin-bottom: 10px;
 }
 
@@ -127,23 +156,4 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
-
-.signout-button {
-  background-color: #dc3545;
-}
-
-.signout-button:hover {
-  background-color: #c82333;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #007BFF;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
 }
