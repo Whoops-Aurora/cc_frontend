@@ -82,3 +82,68 @@
   margin: 0;
   font-size: 24px;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+}
+
+.todo {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.todo h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.todo p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.signout-button {
+  background-color: #dc3545;
+}
+
+.signout-button:hover {
+  background-color: #c82333;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -118,7 +118,7 @@ function App() {
             <button onClick={handleSignOut} className="signout-button">Sign Out</button>
           </>
         }
-        <footer className="footer">This is a footer</footer>
+        <footer className="footer">Thank you... Made with ❤️ by Adwait,Om and Amogh</footer>
       </div>
     </>
   );
